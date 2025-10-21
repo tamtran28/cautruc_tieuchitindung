@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giải pháp Tín dụng Thông minh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">Tín dụng<span>+</span></div>
+      <nav class="nav" aria-label="Điều hướng chính">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">☰</button>
+        <ul id="nav-menu" class="nav__menu">
+          <li><a href="#gioi-thieu">Giới thiệu</a></li>
+          <li><a href="#tinh-nang">Tính năng</a></li>
+          <li><a href="#tai-len">Tải lên</a></li>
+          <li><a href="#domain">Triển khai</a></li>
+          <li><a href="#chi-so">Chỉ số</a></li>
+          <li><a href="#lien-he">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="#lien-he">Đăng ký tư vấn</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="gioi-thieu" class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <h1>Giải pháp thẩm định tín dụng toàn diện</h1>
+          <p>
+            Tự động hóa quy trình đánh giá tín dụng với các mô hình tiên tiến và báo cáo trực quan, giúp doanh nghiệp ra quyết định nhanh chóng và chính xác.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#tinh-nang">Khám phá ngay</a>
+            <a class="btn btn--secondary" href="#chi-so">Xem kết quả</a>
+          </div>
+        </div>
+        <div class="hero__illustration" aria-hidden="true">
+          <div class="card card--primary">
+            <h3>Điểm tín dụng</h3>
+            <p>768 / 800</p>
+          </div>
+          <div class="card card--secondary">
+            <h3>Tỷ lệ chấp thuận</h3>
+            <p>92%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tinh-nang" class="features">
+      <div class="container">
+        <h2>Những điểm nổi bật</h2>
+        <div class="features__grid">
+          <article class="feature-card">
+            <h3>Phân tích dữ liệu đa chiều</h3>
+            <p>Tích hợp dữ liệu từ báo cáo tài chính, lịch sử giao dịch và thông tin khách hàng để đưa ra đánh giá chính xác.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Mô hình máy học</h3>
+            <p>Sử dụng các thuật toán hiện đại để dự đoán rủi ro và gợi ý hạn mức tín dụng phù hợp.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Bảng điều khiển trực quan</h3>
+            <p>Giao diện rõ ràng, dễ sử dụng giúp đội ngũ quản lý theo dõi các chỉ số tín dụng theo thời gian thực.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tai-len" class="upload" aria-labelledby="upload-heading">
+      <div class="container">
+        <div class="upload__head">
+          <span class="section-tag">Sandbox</span>
+          <h2 id="upload-heading">Tải lên dữ liệu để chạy thử mô hình</h2>
+          <p>
+            Khởi động nhanh quá trình thẩm định với công cụ upload dữ liệu trực tuyến. Hệ thống hỗ trợ kiểm tra định dạng,
+            hiển thị bản xem trước và thống kê cơ bản để bạn hiểu rõ tập tin trước khi gửi sang môi trường sản xuất.
+          </p>
+        </div>
+        <div class="upload__grid">
+          <form class="upload__form" aria-label="Biểu mẫu tải dữ liệu thẩm định">
+            <div class="form__group">
+              <label class="upload__label" for="dataset-upload">Chọn tập dữ liệu (CSV)</label>
+              <input type="file" id="dataset-upload" name="dataset" accept=".csv,.txt" required />
+              <p class="upload__hint">Hỗ trợ tập tin định dạng CSV với kích thước tối đa 5MB.</p>
+            </div>
+            <button type="submit" class="btn btn--primary">Phân tích nhanh</button>
+            <p class="upload__disclaimer">
+              Dữ liệu chỉ được xử lý trong trình duyệt và không gửi tới máy chủ, đảm bảo an toàn cho thông tin doanh nghiệp.
+            </p>
+          </form>
+          <div class="upload__result" aria-live="polite">
+            <div class="upload__status" role="status">Chưa có tập tin nào được tải lên.</div>
+            <div class="upload__summary" hidden>
+              <h3>Kết quả phân tích sơ bộ</h3>
+              <ul class="upload__metrics">
+                <li><span class="metric__label">Số dòng dữ liệu</span><span class="metric__value" data-metric="rows">0</span></li>
+                <li><span class="metric__label">Số trường thông tin</span><span class="metric__value" data-metric="columns">0</span></li>
+                <li><span class="metric__label">Kích thước tập tin</span><span class="metric__value" data-metric="size">0 KB</span></li>
+              </ul>
+              <div class="upload__preview" hidden>
+                <h4>Xem trước 5 dòng đầu</h4>
+                <div class="upload__table-wrapper">
+                  <table class="upload__table">
+                    <thead></thead>
+                    <tbody></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="domain" class="deployment" aria-labelledby="deployment-heading">
+      <div class="container">
+        <div class="deployment__content">
+          <div class="deployment__text">
+            <h2 id="deployment-heading">Domain triển khai sẵn sàng</h2>
+            <p>
+              Hệ thống đã được cấu hình và vận hành trên hạ tầng bảo mật với chứng chỉ SSL đầy đủ, sẵn sàng phục vụ khách hàng
+              trên domain riêng.
+            </p>
+            <div class="deployment__meta">
+              <span class="deployment__badge" aria-label="Domain đang hoạt động">Live</span>
+              <code class="deployment__domain" aria-label="Địa chỉ domain">app.tindungplus.vn</code>
+            </div>
+          </div>
+          <div class="deployment__actions">
+            <a class="btn btn--primary" href="https://app.tindungplus.vn" target="_blank" rel="noopener noreferrer">
+              Truy cập bản demo
+            </a>
+            <a class="btn btn--secondary" href="#lien-he">Nhận thông tin triển khai</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="chi-so" class="stats" aria-labelledby="stats-heading">
+      <div class="container">
+        <h2 id="stats-heading">Chỉ số hiệu quả</h2>
+        <div class="stats__grid">
+          <div class="stat">
+            <span class="stat__value" data-target="120">0</span>
+            <p>Doanh nghiệp triển khai</p>
+          </div>
+          <div class="stat">
+            <span class="stat__value" data-target="35">0</span>
+            <p>Tỉnh thành áp dụng</p>
+          </div>
+          <div class="stat">
+            <span class="stat__value" data-target="18">0</span>
+            <p>Ngày triển khai trung bình</p>
+          </div>
+          <div class="stat">
+            <span class="stat__value" data-target="96">0</span>
+            <p>Tỷ lệ hài lòng</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <div class="container">
+        <blockquote>
+          <p>
+            "Hệ thống đã giúp chúng tôi rút ngắn 60% thời gian thẩm định và giảm đáng kể rủi ro trong danh mục tín dụng."
+          </p>
+          <cite>— Nguyễn Thị Mai, Giám đốc tín dụng TechFinance</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="lien-he" class="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Liên hệ với chúng tôi</h2>
+        <p>Để lại thông tin, chuyên gia của chúng tôi sẽ kết nối với bạn trong 24 giờ.</p>
+        <form class="contact__form">
+          <div class="form__group">
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required />
+          </div>
+          <div class="form__group">
+            <label for="company">Doanh nghiệp</label>
+            <input type="text" id="company" name="company" placeholder="Công ty TNHH ABC" required />
+          </div>
+          <div class="form__group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="email@congty.com" required />
+          </div>
+          <div class="form__group">
+            <label for="message">Nhu cầu tư vấn</label>
+            <textarea id="message" name="message" rows="4" placeholder="Mô tả ngắn gọn nhu cầu của bạn..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Gửi thông tin</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Tín dụng+. Mọi quyền được bảo lưu.</p>
+      <div class="footer__links">
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#tinh-nang">Tính năng</a>
+        <a href="#tai-len">Tải lên</a>
+        <a href="#lien-he">Liên hệ</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
